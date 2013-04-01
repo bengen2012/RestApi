@@ -131,8 +131,7 @@ class Request{
 	
 	protected function executeDelete ($ch)
 	{
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
-		
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');		
 		$this->doExecute($ch);
 	}
 	

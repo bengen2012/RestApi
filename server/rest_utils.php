@@ -17,8 +17,7 @@ class RestUtils{
 				$data = $put_vars;
 				break;
 			case 'delete':
-				parse_str(file_get_contents('php://input'), $put_vars);
-				$data = $put_vars;
+				$data = $_SERVER['QUERY_STRING'];
 				break;
 		}
 		$return_obj->setMethod($request_method);
